@@ -33,7 +33,7 @@ MongoClient.connect(
     //   .then(res => console.log(res));
 
     db.collection("Users")
-      .findOneAndDelete({ _id: new ObjectID("5c314ac994b174b6efb8fb73") })
+      .findOneAndDelete({ _id: new ObjectID("5c316a05e4f0109932c7324e") })
       .then(res => console.log(JSON.stringify(res, undefined, 2)));
 
     // client.close();
