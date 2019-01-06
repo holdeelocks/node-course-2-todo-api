@@ -32,9 +32,9 @@ MongoClient.connect(
     //   .deleteMany({ name: "Holden" })
     //   .then(res => console.log(res));
 
-    // db.collection("Users")
-    //   .deleteOne({ _id: new ObjectID("5c314ac994b174b6efb8fb73") })
-    //   .then(res => console.log(res));
+    db.collection("Users")
+      .findOneAndDelete({ _id: new ObjectID("5c314ac994b174b6efb8fb73") })
+      .then(res => console.log(JSON.stringify(res, undefined, 2)));
 
     // client.close();
   }
